@@ -1,0 +1,111 @@
+.album-page {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 80px 40px;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.album-cover {
+  width: 400px;
+  max-width: 90%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.album-title {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #ffffff;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+/* Button styling matching the active white state screenshot */
+.listen-btn {
+  padding: 10px 40px;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  color: #ffffff;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  transition: all 0.2s ease;
+  margin-bottom: 25px;
+}
+
+.listen-btn.active {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+/* Explicit container height and display structure */
+.stream-links {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 30px;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  min-height: 50px; /* Forces space allocation on screen */
+  width: 100%;
+}
+
+/* Explicit sizing overrides for the React SVGs inside links */
+.icon-link {
+  color: #ffffff !important;
+  display: inline-block;
+  opacity: 0.8;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.icon-link svg {
+  width: 32px !important;
+  height: 32px !important;
+  fill: currentColor;
+}
+
+.icon-link:hover {
+  transform: scale(1.15);
+  opacity: 1;
+}
+
+/* Smooth Fade In Sequence */
+.fade-in {
+  animation: fadeInEffect 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes fadeInEffect {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.back {
+  display: inline-block;
+  margin-bottom: 20px;
+  text-decoration: none;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  color: #ffffff !important;
+  opacity: 0.4;
+}
+
+.album-desc {
+  color: #ffffff;
+  margin-top: 15px;
+  opacity: 0.6;
+  max-width: 500px;
+  font-size: 0.9rem;
+}
