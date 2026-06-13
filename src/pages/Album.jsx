@@ -19,7 +19,6 @@ function Album() {
     );
   }
 
-  // Fallback map: structural guard in case data naming conventions differ
   const spotifyUrl = "https://open.spotify.com/artist/0E1Yd4BPHXB4DfTaYb9Y5i";
   const appleUrl = "https://music.apple.com/us/artist/da-ti/1789890751";
   const youtubeUrl = "https://music.youtube.com/@Datiii";

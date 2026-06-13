@@ -7,6 +7,7 @@ import Tour from "./pages/Tour";
 import Music from "./pages/Music";
 import Merch from "./pages/Merch";
 import Socials from "./pages/Socials";
+import Album from "./pages/Album";
 
 function App() {
   return (
@@ -14,11 +15,13 @@ function App() {
       <Navbar />
 
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/tour" element={<Tour />} />
-        <Route path="/music" element={<Music />} />
-        <Route path="/merch" element={<Merch />} />
-        <Route path="/socials" element={<Socials />} />
+        <Route path="/dati" element={<Home />} />
+        <Route path="tour" element={<Tour />} />
+        <Route path="music" element={<Music />} />
+        <Route path="merch" element={<Merch />} />
+        <Route path="music/:id" element={<Album />} />
+        <Route path="socials" element={<Socials />} />
+        <Route path="*" element={<Home />} />
       </Routes>
     </BrowserRouter>
   );
