@@ -1,0 +1,27 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Navbar from "./components/Navbar";
+
+import Home from "./pages/Home";
+import Tour from "./pages/Tour";
+import Music from "./pages/Music";
+import Merch from "./pages/Merch";
+import Socials from "./pages/Socials";
+
+function App() {
+  return (
+    <BrowserRouter>
+      <Navbar />
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/tour" element={<Tour />} />
+        <Route path="/music" element={<Music />} />
+        <Route path="/merch" element={<Merch />} />
+        <Route path="/socials" element={<Socials />} />
+      </Routes>
+    </BrowserRouter>
+  );
+}
+
+export default App;

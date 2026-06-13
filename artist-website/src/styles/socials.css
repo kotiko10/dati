@@ -1,0 +1,48 @@
+.socials-page {
+  text-align: center;
+}
+
+.socials-page h1 {
+  font-size: 4rem;
+  margin-bottom: 60px;
+  letter-spacing: 6px;
+}
+
+.social-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+.social-grid a {
+  background: #111;
+  border: 1px solid #222;
+
+  height: 220px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 20px;
+
+  transition: 0.4s;
+}
+
+.social-grid a svg {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.social-grid a span {
+  font-size: 1.2rem;
+}
+
+.social-grid a:hover {
+  transform: translateY(-10px) scale(1.03);
+
+  border-color: #ff3c78;
+
+  box-shadow: 0 0 30px rgba(255, 60, 120, 0.4);
+}

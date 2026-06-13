@@ -1,0 +1,15 @@
+.footer {
+  padding: 60px 10%;
+  text-align: center;
+  background: #080808;
+  border-top: 1px solid #1d1d1d;
+}
+
+.footer h2 {
+  letter-spacing: 4px;
+  margin-bottom: 10px;
+}
+
+.footer p {
+  color: #777;
+}
