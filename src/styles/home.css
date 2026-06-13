@@ -1,50 +1,84 @@
 .home {
-  height: 100vh;
-
-  background: url("https://images.unsplash.com/photo-1501386761578-eac5c94b800a")
-    center/cover no-repeat;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
   position: relative;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 0 20px;
 }
 
 .overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0,0,0,0.5);
 }
 
 .hero-content {
   position: relative;
-  text-align: center;
   z-index: 2;
+  max-width: 900px;
 }
 
 .hero-content h1 {
-  font-size: 6rem;
-  letter-spacing: 10px;
+  font-size: 5rem;
+  letter-spacing: 6px;
+  margin-bottom: 10px;
 }
 
 .hero-content p {
-  margin-top: 20px;
   font-size: 1.2rem;
-  letter-spacing: 4px;
+  margin: 10px 0;
 }
 
-.hero-content button {
-  margin-top: 30px;
-  padding: 15px 40px;
+.hero-buttons {
+  margin-top: 25px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.hero-buttons button {
+  padding: 12px 25px;
   border: none;
-  background: #ff3c78;
-  color: white;
-  font-size: 1rem;
   cursor: pointer;
-  transition: 0.3s;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
 
-.hero-content button:hover {
-  transform: scale(1.05);
+.hero-buttons .secondary {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+/* 📱 TABLET */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 3.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+}
+
+/* 📱 MOBILE */
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero-buttons button {
+    width: 100%;
+  }
 }

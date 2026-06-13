@@ -19,6 +19,7 @@
   letter-spacing: 4px;
 }
 
+/* DESKTOP LINKS */
 .nav-links {
   display: flex;
   gap: 30px;
@@ -27,8 +28,44 @@
 .nav-links a {
   transition: 0.3s;
   position: relative;
+  color: white;
+  text-decoration: none;
 }
 
 .nav-links a:hover {
   color: #ff3c78;
+}
+
+/* HAMBURGER (hidden on desktop) */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+
+    background: rgba(0, 0, 0, 0.95);
+    gap: 20px;
+    padding: 20px 0;
+
+    display: none;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
 }

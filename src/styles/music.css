@@ -63,3 +63,31 @@
 .album-card:hover {
   transform: scale(1.02);
 }
+
+/* TABLET */
+@media (max-width: 900px) {
+  .album-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .album-grid {
+    grid-template-columns: 1fr; /* one by one */
+    gap: 20px;
+  }
+
+  .music-page {
+    padding: 60px 20px;
+  }
+
+  .music-page h1 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+  }
+
+  .album-card img {
+    height: 260px;
+  }
+}
