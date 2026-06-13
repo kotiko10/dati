@@ -1,33 +1,19 @@
+import "../styles/comingSoon.css";
+
 function Tour() {
-  const shows = [
-    {
-      city: "Berlin",
-      venue: "Mercedes Arena",
-      date: "July 14",
-    },
-    {
-      city: "Budapest",
-      venue: "Akvárium Klub",
-      date: "July 21",
-    },
-  ];
-
   return (
-    <div className="page">
-      <h1>TOUR DATES</h1>
+    <div className="page coming-soon">
+      <h1>TOUR</h1>
 
-      <div className="tour-list">
-        {shows.map((show, index) => (
-          <div className="tour-card" key={index}>
-            <h2>{show.city}</h2>
+      <p className="subtitle">New tour dates coming soon</p>
 
-            <p>{show.venue}</p>
+      <div className="info-box">
+        <p>
+          We’re currently planning the next run of shows.
+          Stay tuned for announcements.
+        </p>
 
-            <span>{show.date}</span>
-
-            <button>BUY TICKETS</button>
-          </div>
-        ))}
+        <button>JOIN MAILING LIST</button>
       </div>
     </div>
   );

@@ -13,22 +13,22 @@ function Socials() {
       <h1>FIND US</h1>
 
       <div className="social-grid">
-        <a href="https://instagram.com" target="_blank">
+        <a href="https://www.instagram.com/dati.ttt" target="_blank">
           <FaInstagram />
           <span>Instagram</span>
         </a>
 
-        <a href="https://spotify.com" target="_blank">
+        <a href="https://open.spotify.com/artist/0E1Yd4BPHXB4DfTaYb9Y5i" target="_blank">
           <FaSpotify />
           <span>Spotify</span>
         </a>
 
-        <a href="https://youtube.com" target="_blank">
+        <a href="https://music.youtube.com/@Datiii" target="_blank">
           <FaYoutube />
           <span>YouTube</span>
         </a>
 
-        <a href="https://tiktok.com" target="_blank">
+        <a href="https://www.tiktok.com/@dati.tt" target="_blank">
           <FaTiktok />
           <span>TikTok</span>
         </a>
